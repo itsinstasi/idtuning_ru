@@ -1,0 +1,486 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>c 217</title>
+    <meta name="title" content="c 217">
+    
+    <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/> 
+    <script async src="https://use.fontawesome.com/d758daec41.js"></script>   
+	<link rel="stylesheet" href="../css/style.css"/>
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#fff">
+    <meta name="msapplication-TileImage" content="../img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#fff">
+
+</head>
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserhappy">
+            Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="https://browsehappy.com/"  target="_blank">обновите</a>.
+        </p>
+    <![endif]-->
+    <noscript>
+		Вам нужно включить JavaScript в своем браузере, чтобы  отображение этой страницы было корректно.
+    </noscript>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__wrap">
+					<div class="header__left">
+						<a href="../main.html" class="header__logo">
+							<div class="header__logo-pic"><img src="https://scontent-arn2-2.cdninstagram.com/vp/b554eb5a239f54335b0c3591e0d3b52c/5E1E3C3B/t51.2885-19/s150x150/66177721_879299312463404_6719515418794393600_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com" alt="Тюнинг-ателье IDTUNING"></div>
+							<div class="header__logo-txt">idtuning_ru</div>
+						</a>
+						<div class="header__title">Тюнинг-ателье IDTUNING</div>
+					</div>
+					<!--<div class="header__right">
+						<form action="#" method="get" class="search">
+							<input type="search" class="input search__input" placeholder="Поиск">
+							<button class="btn search__btn" type="submit" title="Искать"><i class="fa fa-search" aria-hidden="true"></i></button>
+						</form>
+					</div>-->
+				</div>
+			</div>
+		</header>	
+		<div class="main">
+			<div class="stories" style="display: none;">
+				<div class="container">
+					<div class="stories__slider" id="js-stories-slider">
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="тюнинг">
+								<a href="./tyuning.html">
+									<div class="stories__slide-pic"><img src="../img/og/tyuning.png" alt="тюнинг" /></div>
+									<div class="stories__slide-txt">тюнинг</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="id tuning">
+								<a href="./id-tuning.html">
+									<div class="stories__slide-pic"><img src="../img/og/id-tuning.png" alt="id tuning" /></div>
+									<div class="stories__slide-txt">id tuning</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="drive2">
+								<a href="./drive2.html">
+									<div class="stories__slide-pic"><img src="../img/og/drive2.png" alt="drive2" /></div>
+									<div class="stories__slide-txt">drive2</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="мерседес">
+								<a href="./mersedes.html">
+									<div class="stories__slide-pic"><img src="../img/og/mersedes.png" alt="мерседес" /></div>
+									<div class="stories__slide-txt">мерседес</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="драйв2">
+								<a href="./drayv2.html">
+									<div class="stories__slide-pic"><img src="../img/og/drayv2.png" alt="драйв2" /></div>
+									<div class="stories__slide-txt">драйв2</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="смотра">
+								<a href="./smotra.html">
+									<div class="stories__slide-pic"><img src="../img/og/smotra.png" alt="смотра" /></div>
+									<div class="stories__slide-txt">смотра</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="авто">
+								<a href="./avto.html">
+									<div class="stories__slide-pic"><img src="../img/og/avto.png" alt="авто" /></div>
+									<div class="stories__slide-txt">авто</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="бмв">
+								<a href="./bmv.html">
+									<div class="stories__slide-pic"><img src="../img/og/bmv.png" alt="бмв" /></div>
+									<div class="stories__slide-txt">бмв</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="cars">
+								<a href="./cars.html">
+									<div class="stories__slide-pic"><img src="../img/og/cars.png" alt="cars" /></div>
+									<div class="stories__slide-txt">cars</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="Москва">
+								<a href="./moskva.html">
+									<div class="stories__slide-pic"><img src="../img/og/Moskva.png" alt="Москва" /></div>
+									<div class="stories__slide-txt">Москва</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="россия">
+								<a href="./rossiya.html">
+									<div class="stories__slide-pic"><img src="../img/og/rossiya.png" alt="россия" /></div>
+									<div class="stories__slide-txt">россия</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="moscow">
+								<a href="./moscow.html">
+									<div class="stories__slide-pic"><img src="../img/og/moscow.png" alt="moscow" /></div>
+									<div class="stories__slide-txt">moscow</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="russia">
+								<a href="./russia.html">
+									<div class="stories__slide-pic"><img src="../img/og/russia.png" alt="russia" /></div>
+									<div class="stories__slide-txt">russia</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="tuning">
+								<a href="./tuning.html">
+									<div class="stories__slide-pic"><img src="../img/og/tuning.png" alt="tuning" /></div>
+									<div class="stories__slide-txt">tuning</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="тюнинг авто">
+								<a href="./tyuning-avto.html">
+									<div class="stories__slide-pic"><img src="../img/og/tyuning-avto.png" alt="тюнинг авто" /></div>
+									<div class="stories__slide-txt">тюнинг авто</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="car look">
+								<a href="./car-look.html">
+									<div class="stories__slide-pic"><img src="../img/og/car-look.png" alt="car look" /></div>
+									<div class="stories__slide-txt">car look</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="smotra">
+								<a href="./smotra.html">
+									<div class="stories__slide-pic"><img src="../img/og/smotra.png" alt="smotra" /></div>
+									<div class="stories__slide-txt">smotra</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="обвес">
+								<a href="./obves.html">
+									<div class="stories__slide-pic"><img src="../img/og/obves.png" alt="обвес" /></div>
+									<div class="stories__slide-txt">обвес</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="ауди">
+								<a href="./audi.html">
+									<div class="stories__slide-pic"><img src="../img/og/audi.png" alt="ауди" /></div>
+									<div class="stories__slide-txt">ауди</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="брабус">
+								<a href="./brabus.html">
+									<div class="stories__slide-pic"><img src="../img/og/brabus.png" alt="брабус" /></div>
+									<div class="stories__slide-txt">брабус</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="порше">
+								<a href="./porshe.html">
+									<div class="stories__slide-pic"><img src="../img/og/porshe.png" alt="порше" /></div>
+									<div class="stories__slide-txt">порше</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="карбон">
+								<a href="./karbon.html">
+									<div class="stories__slide-pic"><img src="../img/og/karbon.png" alt="карбон" /></div>
+									<div class="stories__slide-txt">карбон</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="диски">
+								<a href="./diski.html">
+									<div class="stories__slide-pic"><img src="../img/og/diski.png" alt="диски" /></div>
+									<div class="stories__slide-txt">диски</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="оклейка">
+								<a href="./okleyka.html">
+									<div class="stories__slide-pic"><img src="../img/og/okleyka.png" alt="оклейка" /></div>
+									<div class="stories__slide-txt">оклейка</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="п окраскаавто">
+								<a href="./p-okraskaavto.html">
+									<div class="stories__slide-pic"><img src="../img/og/p-okraskaavto.png" alt="п окраскаавто" /></div>
+									<div class="stories__slide-txt">п окраскаавто</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="смотра ру">
+								<a href="./smotra-ru.html">
+									<div class="stories__slide-pic"><img src="../img/og/smotra-ru.png" alt="смотра ру" /></div>
+									<div class="stories__slide-txt">смотра ру</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="бентли">
+								<a href="./bentli.html">
+									<div class="stories__slide-pic"><img src="../img/og/bentli.png" alt="бентли" /></div>
+									<div class="stories__slide-txt">бентли</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="винил">
+								<a href="./vinil.html">
+									<div class="stories__slide-pic"><img src="../img/og/vinil.png" alt="винил" /></div>
+									<div class="stories__slide-txt">винил</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="порш">
+								<a href="./porsh.html">
+									<div class="stories__slide-pic"><img src="../img/og/porsh.png" alt="порш" /></div>
+									<div class="stories__slide-txt">порш</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="п окраска">
+								<a href="./p-okraska.html">
+									<div class="stories__slide-pic"><img src="../img/og/p-okraska.png" alt="п окраска" /></div>
+									<div class="stories__slide-txt">п окраска</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav class="breadcrumbs">
+				<div class="container">
+					<a href="../main.html">Главная</a> / <span>c 217</span>
+				</div>
+			</nav>
+			<div class="tag">
+				<div class="container">
+					<div class="tag__group">
+						<h1 class="tag__title">c 217</h1>
+						<div class="tag__item-list">
+							<a href="../posts/./vypolnili-restayling-mercedes-s-coupe-v-aktual-nuyu-versiyu-2018-model-nogo-goda.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/ddf0749cc2564a1d6e6b8017caf3ef87/5E1C2E75/t51.2885-15/e35/s1080x1080/61401164_347972515912360_3022569309369883682_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-map-marker" aria-hidden="true"></i>Москва-Сити "Город Столиц"</div>
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2019-06-06">06 June 2019</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>2</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>208</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>Выполнили рестайлинг Mercedes S-coupe в актуальную версию 2018 модельного года.</h2>
+										<p>Выполнили рестайлинг Mercedes S-coupe в актуальную версию 2018 модельного года. ⠀<br/>🚀 Сделайте свой автомобиль индивидуальным!<br/>📞+7 (495) 763-64-34<br/>WhatsApp +7 (903) 558-00-57 + Direct<br/>📍ул. Крылатская, 2 корп.4<br/>⠀</p>
+										<p>...ЧИТАТЬ ДАЛЕЕ</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./vypolnili-restayling-mercedes-s63-w222.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/361ce13186cab4dd838c8c404eee01a0/5E39D522/t51.2885-15/e35/s1080x1080/64663692_474687616438428_8250070441951217128_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-map-marker" aria-hidden="true"></i>Moscow, Russia</div>
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2019-06-24">24 June 2019</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>196</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>Выполнили рестайлинг Mercedes S63 W222.</h2>
+										<p>Выполнили рестайлинг Mercedes S63 W222. Также был заменен руль и выкрашена окантовка решетки радиатора.<br/>🚀 Сделайте свой автомобиль индивидуальным!<br/>📞+7 (495) 763-64-34<br/>WhatsApp +7 (903) 558-00-57 + Direct<br/>📍ул. Крылатская, 2 корп.4<br/>⠀</p>
+										<p>...ЧИТАТЬ ДАЛЕЕ</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./mercedes-s63-coupe-c217-1.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/08fd4d4d859192499a79248e4c904f78/5E25AD37/t51.2885-15/e35/s1080x1080/65819053_473037336586914_8406903974355267104_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-map-marker" aria-hidden="true"></i>Moscow, Russia</div>
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2019-07-30">30 July 2019</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>2</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>156</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>Mercedes S63 Coupe C217.</h2>
+										<p>Mercedes S63 Coupe C217. На данном автомобиле сделали полный рестайлинг в актуальную версию 2018 модельного года, а также установили карбоновые элементы обвеса Brabus.<br/>————<br/>🚀 Сделайте свой автомобиль индивидуальным! 📞+7 (495) 763-64-34<br/>📱+7 (903) 558-00-57 WhatsApp + Direct<br/>📍г. Москва, ул. Крылатская, 2 корп.4<br/>————<br/>⠀</p>
+										<p>...ЧИТАТЬ ДАЛЕЕ</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./preobrazili-srazu-dva-mercedes-s-class-v-s63-2018-model-nogo-goda.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/a170d620f7e81f4ab6a6daa88a6d94ff/5E31ED0B/t51.2885-15/e35/s1080x1080/65890991_386101588926070_1651998033751703557_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-map-marker" aria-hidden="true"></i>Krylatskoye District</div>
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2019-07-04">04 July 2019</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>1</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>157</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>Преобразили сразу два Mercedes S-class в S63 2018 модельного года.</h2>
+										<p>Преобразили сразу два Mercedes S-class в S63 2018 модельного года. Причём один из них в довольно редкой короткобазной версии.<br/>————<br/>🚀 Сделайте свой автомобиль индивидуальным! 📞+7 (495) 763-64-34<br/>WhatsApp +7 (903) 558-00-57 + Direct<br/>📍г. Москва, ул. Крылатская, 2 корп.4<br/>————<br/>⠀</p>
+										<p>...ЧИТАТЬ ДАЛЕЕ</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./gotov-ocherednoy-restayling-mercedes-s-coupe-v-aktual-nuyu-versiyu-2018-model-nogo-goda.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/ab43b4dbaa7331445538a3eff8531f39/5E2CF4CA/t51.2885-15/e35/s1080x1080/64640231_2436941483012215_8750237586650768481_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-map-marker" aria-hidden="true"></i>Moscow, Russia</div>
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2019-06-18">18 June 2019</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>2</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>150</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>Готов очередной рестайлинг Mercedes S-coupe в актуальную версию 2018 модельного года.</h2>
+										<p>Готов очередной рестайлинг Mercedes S-coupe в актуальную версию 2018 модельного года. ⠀<br/>🚀 Сделайте свой автомобиль индивидуальным!<br/>📞+7 (495) 763-64-34<br/>WhatsApp +7 (903) 558-00-57 + Direct<br/>📍ул. Крылатская, 2 корп.4<br/>⠀</p>
+										<p>...ЧИТАТЬ ДАЛЕЕ</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./mercedes-s63-coupe-c217.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/9c9082b27dbf8de52e8ff84276d77c04/5E278AAE/t51.2885-15/e35/s1080x1080/66326869_2302065469828849_3658593043979763114_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-map-marker" aria-hidden="true"></i>Moscow, Russia</div>
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2019-07-31">31 July 2019</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>3</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>136</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>Mercedes S63 Coupe C217.</h2>
+										<p>Mercedes S63 Coupe C217. На данном автомобиле сделали полный рестайлинг в актуальную версию 2018 модельного года, а также установили карбоновые элементы обвеса Brabus.<br/>————<br/>◾️Сделайте свой автомобиль индивидуальным◾️<br/>📞+7 (495) 763-64-34<br/>📱+7 (903) 558-00-57 WhatsApp + Direct<br/>🔘г. Москва, ул. Крылатская, 2 корп.4<br/>————<br/>⠀</p>
+										<p>...ЧИТАТЬ ДАЛЕЕ</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./kompaniya-brabus-predstavila-elementy-tyuninga-dlya-mercedes-s63-coupe-c217.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/f35e9c6e1f4ecb014f476cf81b4f2444/5E28AC0A/t51.2885-15/e15/39361413_1882983405343848_7997605026459549696_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2015-02-24">24 February 2015</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>11</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>Компания Brabus представила элементы тюнинга для Mercedes S63 Coupe C217.</h2>
+										<p>Компания Brabus представила элементы тюнинга для Mercedes S63 Coupe C217. По вопросам приоьретения обращайтесь по телефону +7 (495) 763-64-34.</p>
+										<p>...ЧИТАТЬ ДАЛЕЕ</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./novyy-diffuzor-zadnego-bampera-i-fonari-na-mb-s-class-coupe-c217-v-versii-63-amg.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/f55a9eb646a177a514cbaed988eb47ac/5E3955A8/t51.2885-15/e35/38688307_2097692957160656_5076269164797100032_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=108" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-06-16">16 June 2018</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>Новый диффузор заднего бампера и фонари на MB S-class Coupe C217 в версии 63 AMG</h2>
+										<p>Новый диффузор заднего бампера и фонари на MB S-class Coupe C217 в версии 63 AMG<br/>⠀<br/>🚀 Сделайте свой автомобиль индивидуальным!<br/>📞+7 (495) 763-64-34<br/>WhatsApp +7 (903) 558-00-57<br/>📍ул. Крылатская, 2 корп.4</p>
+										<p>...ЧИТАТЬ ДАЛЕЕ</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>			
+		<div class="banner">
+			<div class="banner__overlay" id="js-banner-overlay" onclick="document.getElementById('js-banner-overlay').classList.toggle('open');document.getElementById('js-banner-main').classList.toggle('open');"></div>
+			<button class="btn banner__btn" onclick="document.getElementById('js-banner-overlay').classList.toggle('open');document.getElementById('js-banner-main').classList.toggle('open');">
+				<span><i class="fa fa-comments-o" aria-hidden="true"></i></span>
+			</button>
+			<div class="banner__main" id="js-banner-main">
+				<div class="banner__main-title">Свяжитесь с нами</div>
+				<div class="banner__main-row">
+					<a href="https://wa.me/79164035051" target="_blank" 
+					class="banner__main-item">
+						<div class="banner__main-item-ring"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
+						<div class="banner__main-item-txt">WhatsApp</div>
+					</a>
+
+					<div class="banner__main-item disable">
+						<div class="banner__main-item-ring"><i class="fa fa-telegram" aria-hidden="true"></i></div>
+						<div class="banner__main-item-txt">Telegram</div>
+					</div>
+
+					<div class="banner__main-item disable">
+						<div class="banner__main-item-ring"><i class="fa fa-phone-square" aria-hidden="true"></i></div>
+						<div class="banner__main-item-txt">Viber</div>
+					</div>
+
+
+					<a href="https://www.instagram.com/idtuning_ru" target="_blank" 
+					class="banner__main-item">
+						<div class="banner__main-item-ring"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+						<div class="banner__main-item-txt">Instagram</div>
+					</a>
+
+				</div>
+			</div>
+		</div>			
+	</div>
+	<!--jQuery-->
+	<script src="../js/vendors/jquery.min.js"></script>
+	<script src="../js/vendors/jquery.loadScroll.js"></script>
+	<!--device-->
+	<script src="../js/vendors/slick.min.js"></script>
+	<!--init-->
+	<script src="../js/jquery.init.js"></script>
+	<!--my scripts-->
+	<script src="../js/jquery.main.js"></script>
+</body>
+</html>
