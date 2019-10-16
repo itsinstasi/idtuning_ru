@@ -43,6 +43,9 @@
     <meta property="og:locale" content="Ru-ru" />
     <meta property="og:site_name" content="idtuning_ru" />
 
+	<!--modernizr-->
+	<script src="../js/vendors/modernizr-custom.js"></script>
+
 </head>
 <body>
     <!--[if lt IE 8]>
@@ -54,7 +57,7 @@
 		Вам нужно включить JavaScript в своем браузере, чтобы  отображение этой страницы было корректно.
     </noscript>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header" id="js-header">
 			<div class="container">
 				<div class="header__wrap">
 					<div class="header__left">
@@ -68,249 +71,255 @@
 			</div>
 		</header>	
 		<div class="main">
-			<div class="stories" style="display: none;">
+			<div class="stories">
 				<div class="container">
-					<div class="stories__slider" id="js-stories-slider">
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="тюнинг">
-								<a href="../tags/./tyuning.html">
-									<div class="stories__slide-pic"><img src="../img/og/tyuning.png" alt="тюнинг" /></div>
-									<div class="stories__slide-txt">тюнинг</div>
-								</a>
+					<div class="stories__slider-wrap">
+						<div class="stories__slider" id="js-stories-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="stories__slide" title="тюнинг">
+										<a href="../tags/./tyuning.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/tyuning.png);"></div>
+											<div class="stories__slide-txt">тюнинг</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="id tuning">
+										<a href="../tags/./id-tuning.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/id-tuning.png);"></div>
+											<div class="stories__slide-txt">id tuning</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="drive2">
+										<a href="../tags/./drive2.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/drive2.png);"></div>
+											<div class="stories__slide-txt">drive2</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мерседес">
+										<a href="../tags/./mersedes.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mersedes.png);"></div>
+											<div class="stories__slide-txt">мерседес</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="драйв2">
+										<a href="../tags/./drayv2.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/drayv2.png);"></div>
+											<div class="stories__slide-txt">драйв2</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="смотра">
+										<a href="../tags/./smotra.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/smotra.png);"></div>
+											<div class="stories__slide-txt">смотра</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="авто">
+										<a href="../tags/./avto.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/avto.png);"></div>
+											<div class="stories__slide-txt">авто</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="бмв">
+										<a href="../tags/./bmv.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/bmv.png);"></div>
+											<div class="stories__slide-txt">бмв</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="cars">
+										<a href="../tags/./cars.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/cars.png);"></div>
+											<div class="stories__slide-txt">cars</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="Москва">
+										<a href="../tags/./moskva.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/Moskva.png);"></div>
+											<div class="stories__slide-txt">Москва</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="россия">
+										<a href="../tags/./rossiya.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/rossiya.png);"></div>
+											<div class="stories__slide-txt">россия</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="moscow">
+										<a href="../tags/./moscow.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/moscow.png);"></div>
+											<div class="stories__slide-txt">moscow</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="russia">
+										<a href="../tags/./russia.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/russia.png);"></div>
+											<div class="stories__slide-txt">russia</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="tuning">
+										<a href="../tags/./tuning.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/tuning.png);"></div>
+											<div class="stories__slide-txt">tuning</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="тюнинг авто">
+										<a href="../tags/./tyuning-avto.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/tyuning-avto.png);"></div>
+											<div class="stories__slide-txt">тюнинг авто</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="car look">
+										<a href="../tags/./car-look.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/car-look.png);"></div>
+											<div class="stories__slide-txt">car look</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="smotra">
+										<a href="../tags/./smotra.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/smotra.png);"></div>
+											<div class="stories__slide-txt">smotra</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="обвес">
+										<a href="../tags/./obves.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/obves.png);"></div>
+											<div class="stories__slide-txt">обвес</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="ауди">
+										<a href="../tags/./audi.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/audi.png);"></div>
+											<div class="stories__slide-txt">ауди</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="брабус">
+										<a href="../tags/./brabus.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/brabus.png);"></div>
+											<div class="stories__slide-txt">брабус</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="порше">
+										<a href="../tags/./porshe.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/porshe.png);"></div>
+											<div class="stories__slide-txt">порше</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="карбон">
+										<a href="../tags/./karbon.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/karbon.png);"></div>
+											<div class="stories__slide-txt">карбон</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="диски">
+										<a href="../tags/./diski.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/diski.png);"></div>
+											<div class="stories__slide-txt">диски</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="оклейка">
+										<a href="../tags/./okleyka.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/okleyka.png);"></div>
+											<div class="stories__slide-txt">оклейка</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="п окраскаавто">
+										<a href="../tags/./p-okraskaavto.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/p-okraskaavto.png);"></div>
+											<div class="stories__slide-txt">п окраскаавто</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="смотра ру">
+										<a href="../tags/./smotra-ru.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/smotra-ru.png);"></div>
+											<div class="stories__slide-txt">смотра ру</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="бентли">
+										<a href="../tags/./bentli.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/bentli.png);"></div>
+											<div class="stories__slide-txt">бентли</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="винил">
+										<a href="../tags/./vinil.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/vinil.png);"></div>
+											<div class="stories__slide-txt">винил</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="порш">
+										<a href="../tags/./porsh.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/porsh.png);"></div>
+											<div class="stories__slide-txt">порш</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="п окраска">
+										<a href="../tags/./p-okraska.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/p-okraska.png);"></div>
+											<div class="stories__slide-txt">п окраска</div>
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="id tuning">
-								<a href="../tags/./id-tuning.html">
-									<div class="stories__slide-pic"><img src="../img/og/id-tuning.png" alt="id tuning" /></div>
-									<div class="stories__slide-txt">id tuning</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="drive2">
-								<a href="../tags/./drive2.html">
-									<div class="stories__slide-pic"><img src="../img/og/drive2.png" alt="drive2" /></div>
-									<div class="stories__slide-txt">drive2</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мерседес">
-								<a href="../tags/./mersedes.html">
-									<div class="stories__slide-pic"><img src="../img/og/mersedes.png" alt="мерседес" /></div>
-									<div class="stories__slide-txt">мерседес</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="драйв2">
-								<a href="../tags/./drayv2.html">
-									<div class="stories__slide-pic"><img src="../img/og/drayv2.png" alt="драйв2" /></div>
-									<div class="stories__slide-txt">драйв2</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="смотра">
-								<a href="../tags/./smotra.html">
-									<div class="stories__slide-pic"><img src="../img/og/smotra.png" alt="смотра" /></div>
-									<div class="stories__slide-txt">смотра</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="авто">
-								<a href="../tags/./avto.html">
-									<div class="stories__slide-pic"><img src="../img/og/avto.png" alt="авто" /></div>
-									<div class="stories__slide-txt">авто</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="бмв">
-								<a href="../tags/./bmv.html">
-									<div class="stories__slide-pic"><img src="../img/og/bmv.png" alt="бмв" /></div>
-									<div class="stories__slide-txt">бмв</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="cars">
-								<a href="../tags/./cars.html">
-									<div class="stories__slide-pic"><img src="../img/og/cars.png" alt="cars" /></div>
-									<div class="stories__slide-txt">cars</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="Москва">
-								<a href="../tags/./moskva.html">
-									<div class="stories__slide-pic"><img src="../img/og/Moskva.png" alt="Москва" /></div>
-									<div class="stories__slide-txt">Москва</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="россия">
-								<a href="../tags/./rossiya.html">
-									<div class="stories__slide-pic"><img src="../img/og/rossiya.png" alt="россия" /></div>
-									<div class="stories__slide-txt">россия</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="moscow">
-								<a href="../tags/./moscow.html">
-									<div class="stories__slide-pic"><img src="../img/og/moscow.png" alt="moscow" /></div>
-									<div class="stories__slide-txt">moscow</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="russia">
-								<a href="../tags/./russia.html">
-									<div class="stories__slide-pic"><img src="../img/og/russia.png" alt="russia" /></div>
-									<div class="stories__slide-txt">russia</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="tuning">
-								<a href="../tags/./tuning.html">
-									<div class="stories__slide-pic"><img src="../img/og/tuning.png" alt="tuning" /></div>
-									<div class="stories__slide-txt">tuning</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="тюнинг авто">
-								<a href="../tags/./tyuning-avto.html">
-									<div class="stories__slide-pic"><img src="../img/og/tyuning-avto.png" alt="тюнинг авто" /></div>
-									<div class="stories__slide-txt">тюнинг авто</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="car look">
-								<a href="../tags/./car-look.html">
-									<div class="stories__slide-pic"><img src="../img/og/car-look.png" alt="car look" /></div>
-									<div class="stories__slide-txt">car look</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="smotra">
-								<a href="../tags/./smotra.html">
-									<div class="stories__slide-pic"><img src="../img/og/smotra.png" alt="smotra" /></div>
-									<div class="stories__slide-txt">smotra</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="обвес">
-								<a href="../tags/./obves.html">
-									<div class="stories__slide-pic"><img src="../img/og/obves.png" alt="обвес" /></div>
-									<div class="stories__slide-txt">обвес</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="ауди">
-								<a href="../tags/./audi.html">
-									<div class="stories__slide-pic"><img src="../img/og/audi.png" alt="ауди" /></div>
-									<div class="stories__slide-txt">ауди</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="брабус">
-								<a href="../tags/./brabus.html">
-									<div class="stories__slide-pic"><img src="../img/og/brabus.png" alt="брабус" /></div>
-									<div class="stories__slide-txt">брабус</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="порше">
-								<a href="../tags/./porshe.html">
-									<div class="stories__slide-pic"><img src="../img/og/porshe.png" alt="порше" /></div>
-									<div class="stories__slide-txt">порше</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="карбон">
-								<a href="../tags/./karbon.html">
-									<div class="stories__slide-pic"><img src="../img/og/karbon.png" alt="карбон" /></div>
-									<div class="stories__slide-txt">карбон</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="диски">
-								<a href="../tags/./diski.html">
-									<div class="stories__slide-pic"><img src="../img/og/diski.png" alt="диски" /></div>
-									<div class="stories__slide-txt">диски</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="оклейка">
-								<a href="../tags/./okleyka.html">
-									<div class="stories__slide-pic"><img src="../img/og/okleyka.png" alt="оклейка" /></div>
-									<div class="stories__slide-txt">оклейка</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="п окраскаавто">
-								<a href="../tags/./p-okraskaavto.html">
-									<div class="stories__slide-pic"><img src="../img/og/p-okraskaavto.png" alt="п окраскаавто" /></div>
-									<div class="stories__slide-txt">п окраскаавто</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="смотра ру">
-								<a href="../tags/./smotra-ru.html">
-									<div class="stories__slide-pic"><img src="../img/og/smotra-ru.png" alt="смотра ру" /></div>
-									<div class="stories__slide-txt">смотра ру</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="бентли">
-								<a href="../tags/./bentli.html">
-									<div class="stories__slide-pic"><img src="../img/og/bentli.png" alt="бентли" /></div>
-									<div class="stories__slide-txt">бентли</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="винил">
-								<a href="../tags/./vinil.html">
-									<div class="stories__slide-pic"><img src="../img/og/vinil.png" alt="винил" /></div>
-									<div class="stories__slide-txt">винил</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="порш">
-								<a href="../tags/./porsh.html">
-									<div class="stories__slide-pic"><img src="../img/og/porsh.png" alt="порш" /></div>
-									<div class="stories__slide-txt">порш</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="п окраска">
-								<a href="../tags/./p-okraska.html">
-									<div class="stories__slide-pic"><img src="../img/og/p-okraska.png" alt="п окраска" /></div>
-									<div class="stories__slide-txt">п окраска</div>
-								</a>
-							</div>
-						</div>
+						<div class="stories__arrow stories__arrow--prev" id="js-stories-prev"></div>
+						<div class="stories__arrow stories__arrow--next" id="js-stories-next"></div>
 					</div>
 				</div>
 			</div>
@@ -341,9 +350,7 @@
 							</div>
 						<div>
 							<a href="https://www.instagram.com/p/BY7_RlTHod7/" 
-								target="_blank" class="links-page-list__item-link">
-								<strong>Комментировать</strong>
-								<span>Instagram</span>
+								target="_blank" class="links-page-btn shake"><strong>Комментировать</strong>&nbsp;<span>Instagram</span>
 							</a>
 						</div>
 
@@ -450,7 +457,7 @@
 									<div class="article-more__item-pic-blind">
 										<span><i class="fa fa-comment-o" aria-hidden="true"></i>2</span> <span><i class="fa fa-heart" aria-hidden="true"></i>246</span>
 									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/b5ccf6f843b8c5e827a6b6c3faa90538/5E37F75D/t51.2885-15/e35/s1080x1080/66719977_169727924069201_4099434852772186685_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt="Установлен интересный обвес Prior Design на Mercedes CL500.">
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/01e0cd0b565a0e9f7dbdb0093d508292/5E5F845D/t51.2885-15/e35/s1080x1080/66719977_169727924069201_4099434852772186685_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt="Установлен интересный обвес Prior Design на Mercedes CL500.">
 								</div>
 								<div class="article-more__item-name">Установлен интересный обвес Prior Design на Mercedes CL500.</div>
 							</a>
@@ -459,7 +466,7 @@
 									<div class="article-more__item-pic-blind">
 										<span><i class="fa fa-comment-o" aria-hidden="true"></i>2</span> <span><i class="fa fa-heart" aria-hidden="true"></i>208</span>
 									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/ddf0749cc2564a1d6e6b8017caf3ef87/5E1C2E75/t51.2885-15/e35/s1080x1080/61401164_347972515912360_3022569309369883682_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" alt="Выполнили рестайлинг Mercedes S-coupe в актуальную версию 2018 модельного года.">
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/90753ae46bf51fcbfc00b8c37c7925e2/5E43BB75/t51.2885-15/e35/s1080x1080/61401164_347972515912360_3022569309369883682_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" alt="Выполнили рестайлинг Mercedes S-coupe в актуальную версию 2018 модельного года.">
 								</div>
 								<div class="article-more__item-name">Выполнили рестайлинг Mercedes S-coupe в актуальную версию 2018 модельного года.</div>
 							</a>
@@ -468,7 +475,7 @@
 									<div class="article-more__item-pic-blind">
 										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>196</span>
 									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/361ce13186cab4dd838c8c404eee01a0/5E39D522/t51.2885-15/e35/s1080x1080/64663692_474687616438428_8250070441951217128_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt="Выполнили рестайлинг Mercedes S63 W222.">
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/7e8129030d165a9fcdcdd2877e6e5c03/5E616222/t51.2885-15/e35/s1080x1080/64663692_474687616438428_8250070441951217128_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt="Выполнили рестайлинг Mercedes S63 W222.">
 								</div>
 								<div class="article-more__item-name">Выполнили рестайлинг Mercedes S63 W222.</div>
 							</a>
@@ -548,11 +555,12 @@
 			</div>
 		</div>		
 	</div>
+	<!--swiper-->
+	<script src="../js/vendors/swiper.min.js"></script>
 	<!--jQuery-->
 	<script src="../js/vendors/jquery.min.js"></script>
-	<script src="../js/vendors/jquery.loadScroll.js"></script>
-	<!--device-->
-	<script src="../js/vendors/slick.min.js"></script>
+	<!--lazyloadxt-->
+	<script src="../js/vendors/jquery.lazyloadxt.js"></script>
 	<!--init-->
 	<script src="../js/jquery.init.js"></script>
 	<!--my scripts-->
