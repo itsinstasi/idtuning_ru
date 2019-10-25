@@ -1079,6 +1079,60 @@
 							</div>
 						</a>
 					</div>
+				</div>
+			</div>
+		</div>
+		<div class="banner">
+			<div class="banner__overlay" id="js-banner-overlay" onclick="document.getElementById('js-banner-overlay').classList.toggle('open');document.getElementById('js-banner-main').classList.toggle('open');"></div>
+			<button class="btn banner__btn" onclick="document.getElementById('js-banner-overlay').classList.toggle('open');document.getElementById('js-banner-main').classList.toggle('open');">
+				<span><i class="fa fa-comments-o" aria-hidden="true"></i></span>
+			</button>
+			<div class="banner__main" id="js-banner-main">
+				<div class="banner__main-title">Свяжитесь с нами</div>
+				<div class="banner__main-row">
+					<a href="https://wa.me/79164035051" target="_blank" 
+					class="banner__main-item">
+						<div class="banner__main-item-ring"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
+						<div class="banner__main-item-txt">WhatsApp</div>
+					</a>
+
+					<div class="banner__main-item disable">
+						<div class="banner__main-item-ring"><i class="fa fa-telegram" aria-hidden="true"></i></div>
+						<div class="banner__main-item-txt">Telegram</div>
+					</div>
+
+					<div class="banner__main-item disable">
+						<div class="banner__main-item-ring"><i class="fa fa-phone-square" aria-hidden="true"></i></div>
+						<div class="banner__main-item-txt">Viber</div>
+					</div>
+
+
+					<a href="https://www.instagram.com/idtuning_ru" target="_blank" 
+					class="banner__main-item">
+						<div class="banner__main-item-ring"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+						<div class="banner__main-item-txt">Instagram</div>
+					</a>
+
+				</div>
+			</div>
+		</div>			
+	</div>
+
+
+	<!--swiper-->
+	<script src="js/vendors/swiper.min.js"></script>
+	<!--jQuery-->
+	<script src="js/vendors/jquery.min.js"></script>
+	<!--lazyloadxt-->
+	<script src="js/vendors/jquery.lazyloadxt.js"></script>
+	<!--init-->
+	<script src="js/jquery.init.js"></script>
+	<!--my scripts-->
+	<script src="js/jquery.main.js"></script>
+
+
+	<script type="text/javascript">
+var listTail = `
 					<div class="items-item">
 						<a href="./posts/./obves-prior-design-na-belom.html" class="items-item__wrap">
 							<div class="items-item__pic">
@@ -1675,60 +1729,6 @@
 							</div>
 						</a>
 					</div>
-				</div>
-			</div>
-		</div>
-		<div class="banner">
-			<div class="banner__overlay" id="js-banner-overlay" onclick="document.getElementById('js-banner-overlay').classList.toggle('open');document.getElementById('js-banner-main').classList.toggle('open');"></div>
-			<button class="btn banner__btn" onclick="document.getElementById('js-banner-overlay').classList.toggle('open');document.getElementById('js-banner-main').classList.toggle('open');">
-				<span><i class="fa fa-comments-o" aria-hidden="true"></i></span>
-			</button>
-			<div class="banner__main" id="js-banner-main">
-				<div class="banner__main-title">Свяжитесь с нами</div>
-				<div class="banner__main-row">
-					<a href="https://wa.me/79164035051" target="_blank" 
-					class="banner__main-item">
-						<div class="banner__main-item-ring"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
-						<div class="banner__main-item-txt">WhatsApp</div>
-					</a>
-
-					<div class="banner__main-item disable">
-						<div class="banner__main-item-ring"><i class="fa fa-telegram" aria-hidden="true"></i></div>
-						<div class="banner__main-item-txt">Telegram</div>
-					</div>
-
-					<div class="banner__main-item disable">
-						<div class="banner__main-item-ring"><i class="fa fa-phone-square" aria-hidden="true"></i></div>
-						<div class="banner__main-item-txt">Viber</div>
-					</div>
-
-
-					<a href="https://www.instagram.com/idtuning_ru" target="_blank" 
-					class="banner__main-item">
-						<div class="banner__main-item-ring"><i class="fa fa-instagram" aria-hidden="true"></i></div>
-						<div class="banner__main-item-txt">Instagram</div>
-					</a>
-
-				</div>
-			</div>
-		</div>			
-	</div>
-
-
-	<!--swiper-->
-	<script src="js/vendors/swiper.min.js"></script>
-	<!--jQuery-->
-	<script src="js/vendors/jquery.min.js"></script>
-	<!--lazyloadxt-->
-	<script src="js/vendors/jquery.lazyloadxt.js"></script>
-	<!--init-->
-	<script src="js/jquery.init.js"></script>
-	<!--my scripts-->
-	<script src="js/jquery.main.js"></script>
-
-
-	<script type="text/javascript">
-var listTail = `
 					<div class="items-item">
 						<a href="./posts/./audi-tt-abt-by-xidtuningxru.html" class="items-item__wrap">
 							<div class="items-item__pic">
@@ -19476,7 +19476,7 @@ var listTail = `
 	$(document).ready(function() {
 		setTimeout(function() {
 			$(".items-main").append(listTail).find('img[data-src]').lazyLoadXT();
-		}, 15000);
+		}, 12000);
 	});
 	</script>               
 </body>
