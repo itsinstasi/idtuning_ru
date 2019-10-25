@@ -1,0 +1,4 @@
+﻿User-agent: *
+Sitemap: https://tuntun.ru/sitemap.xml
+Disallow: /main.html
+Disallow: /main
