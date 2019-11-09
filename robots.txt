@@ -2,3 +2,5 @@
 Sitemap: http://tuntun.ru/sitemap.xml
 Disallow: /main.html
 Disallow: /main
+Disallow: /stories.html
+Disallow: /stories
